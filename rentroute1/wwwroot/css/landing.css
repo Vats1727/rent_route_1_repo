@@ -1,0 +1,105 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed; /* This makes the background image static */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+}
+
+
+
+h1, h2, h4 {
+    color: #FDFDFD;
+}
+
+/* Hero Section */
+.hero {
+    //background-image: url(../img/hero.jpg);
+
+    background-size: cover;
+    background-position: center;
+    padding: 0px -1px;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero-text a {
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+/* Search Form */
+.search-form {
+    padding: 50px 0;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+    .search-form h2 {
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .search-form .form-inline {
+        justify-content: center;
+    }
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+}
+
+    .services h2 {
+        margin-bottom: 40px;
+    }
+
+    .services img {
+        margin-bottom: 20px;
+    }
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+    .social-links a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+
+/*Custom css*/
+
+section.search-form {
+    margin-top: 20px;
+}
+

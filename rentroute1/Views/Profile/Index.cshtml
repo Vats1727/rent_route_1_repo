@@ -1,0 +1,38 @@
+﻿@model IEnumerable<rentroute1.Models.User>
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <h2 class="section-title">Registered Users</h2>
+
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Serial No</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Select((user, index) => new { user, index }))
+                {
+                    <tr>
+                        <td>@(user.index + 1)</td> <!-- Continuous numbering starting from 1 -->
+                        <td>@user.user.FullName</td>
+                        <td>@user.user.Email</td>
+                        <td>@user.user.Role</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No users found.</p>
+    }
+</div>

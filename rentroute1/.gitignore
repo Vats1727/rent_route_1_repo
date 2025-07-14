@@ -1,0 +1,18 @@
+﻿# Ignore Visual Studio temporary files, build results, and user-specific files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.dbmdl
+*.log
+*.pidb
+*.psess
+*.vsp
+*.pdb
+*.cache
+*.zip
+*.nupkg
+*.sqlite
+*.sqlite3
+appsettings.Development.json

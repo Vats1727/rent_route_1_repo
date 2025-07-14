@@ -1,0 +1,50 @@
+﻿@* @model rentroute1.Models.Reservation
+
+<h2>Edit Reservation</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="VehicleId"></label>
+        <input asp-for="VehicleId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="StartDate"></label>
+        <input asp-for="StartDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EndDate"></label>
+        <input asp-for="EndDate" class="form-control" type="date" />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+ *@
+
+ @model rentroute1.Models.Reservation
+
+<h2>Edit Reservation</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="PickupLocation"></label>
+        <input asp-for="PickupLocation" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PickupDate"></label>
+        <input asp-for="PickupDate" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PickupTime"></label>
+        <input asp-for="PickupTime" type="time" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DropDate"></label>
+        <input asp-for="DropDate" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DropTime"></label>
+        <input asp-for="DropTime" type="time" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
